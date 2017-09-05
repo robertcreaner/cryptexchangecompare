@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cryptex Compare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="js/lodash.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="row">
+            <h5>Cryptex Compare</h5>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- <div id="loader"></div> -->
+        <table class="u-full-width coin-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th><span>Kraken</span></th>
+                    <th><span>Coinone</span></th>
+                    <th><span>Price difference (%)</span></th>
+                </tr>
+            </thead>
+            <tbody class="coin-table--body">
+                <tr>
+                    <td><img src="https://files.coinmarketcap.com/static/img/coins/32x32/bitcoin.png" class="currency-logo-32x32" alt="Bitcoin"><span>Bitcoin</span></td>
+                    <td><span class="kraken-BTC-price"></span></td>
+                    <td><span class="coinone-BTC-price"></span></td>
+                    <td><span class="BTC-difference"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png" class="currency-logo-32x32" alt="Ethereum"><span>Ethereum</span></td>
+                    <td><span class="kraken-ETH-price"></span></td>
+                    <td><span class="coinone-ETH-price"></span></td>
+                    <td><span class="ETH-difference"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="https://files.coinmarketcap.com/static/img/coins/32x32/ethereum-classic.png" class="currency-logo-32x32" alt="Ethereum Classic"><span>Ethereum Classic</span></td>
+                    <td><span class="kraken-ETC-price"></span></td>
+                    <td><span class="coinone-ETC-price"></span></td>
+                    <td><span class="ETC-difference"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="https://files.coinmarketcap.com/static/img/coins/32x32/ripple.png" class="currency-logo-32x32" alt="Ripple"><span>Ripple</span></td>
+                    <td><span class="kraken-XRP-price"></span></td>
+                    <td><span class="coinone-XRP-price"></span></td>
+                    <td><span class="XRP-difference"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="services/arbitrage.js"></script>
+    <script type="text/javascript" src="services/fixer.js"></script>
+    <script type="text/javascript" src="services/mathhelper.js"></script>
+    <script type="text/javascript" src="services/kraken.js"></script>
+    <script type="text/javascript" src="services/coinone.js"></script>
+    <script type="text/javascript" src="js/app2.js"></script>
+</body>
+</html>
