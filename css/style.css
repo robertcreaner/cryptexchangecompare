@@ -1,52 +1,59 @@
 body {
-	color: #000;
-	background: #f0f0f0;
-	margin: 0;
+    color: #000;
+    background: #f0f0f0;
+    margin: 0;
 }
 
 .header {
-	color:#fff;
-	background: #2f353f;
+    color: #fff;
+    background: #2f353f;
 }
 
-.header h5{
-	padding-top:2rem;
-	padding-left: 2rem;
+.header h5 {
+    padding-top: 2rem;
+    padding-left: 2rem;
 }
 
 .container {
-	background: #fff;
-	margin: 16px auto;
+    background: #fff;
+    margin: 16px auto;
 }
 
+
 /* Coin Table */
-.coin-table{
-	width: 96%;
+
+.coin-table {
+    width: 96%;
     margin-left: 2%;
-    /*display:none;*/
 }
 
 .show-coin-table {
-	visibility: show;
+    visibility: show;
 }
 
-.coin-table .coin-table--body img{
-	float:left;
-	width: 24px;
-	padding-right: 10px;
+.hide-coin-table {
+    visibility: hidden;
 }
 
-.green{
-	color: #00bd00;
+.coin-table .coin-table--body img {
+    float: left;
+    width: 24px;
+    padding-right: 10px;
+}
+
+.green {
+    color: #00bd00;
 }
 
 .red {
-	color:red;
+    color: red;
 }
 
+
 /* Styling or loading spinner */
+
 #loader {
-	position: absolute;
+    position: absolute;
     left: 50%;
     top: 60px;
     z-index: 1;
@@ -63,32 +70,51 @@ body {
 }
 
 .hide-loader {
-	display: none;
+    display: none;
 }
 
 @-webkit-keyframes spin {
-	0% { -webkit-transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 
 /* Mobile first queries */
 
+
 /* Larger than mobile */
+
 @media (min-width: 400px) {}
 
+
 /* Larger than phablet */
+
 @media (min-width: 550px) {}
 
+
 /* Larger than tablet */
+
 @media (min-width: 750px) {}
 
+
 /* Larger than desktop */
+
 @media (min-width: 1000px) {}
 
+
 /* Larger than Desktop HD */
+
 @media (min-width: 1200px) {}

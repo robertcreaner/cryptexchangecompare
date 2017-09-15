@@ -1,0 +1,22 @@
+{
+  "name": "crypt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertcreaner/cryptexchangecompare.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertcreaner/cryptexchangecompare/issues"
+  },
+  "homepage": "https://github.com/robertcreaner/cryptexchangecompare#readme",
+  "dependencies": {
+    "PubSub": "^3.2.7"
+  }
+}

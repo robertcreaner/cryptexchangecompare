@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script src="js/lodash.js"></script>
+    <script src="js/vendor/lodash.js"></script>
+    <script type="text/javascript" src="js/services/fixer.js"></script>
+    <script src="node_modules/PubSub/src/pubsub.js"></script>
 </head>
 <body>
     <div class="header">
@@ -19,8 +21,8 @@
     </div>
 
     <div class="container">
-        <!-- <div id="loader"></div> -->
-        <table class="u-full-width coin-table">
+        <div id="loader"></div>
+        <table class="u-full-width coin-table hide-coin-table">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -57,12 +59,6 @@
             </tbody>
         </table>
     </div>
-
-    <script type="text/javascript" src="services/arbitrage.js"></script>
-    <script type="text/javascript" src="services/fixer.js"></script>
-    <script type="text/javascript" src="services/mathhelper.js"></script>
-    <script type="text/javascript" src="services/kraken.js"></script>
-    <script type="text/javascript" src="services/coinone.js"></script>
-    <script type="text/javascript" src="js/app2.js"></script>
+    <script type="text/javascript" src="js/app-bundle.js"></script>
 </body>
 </html>
