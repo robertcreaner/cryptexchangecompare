@@ -57,6 +57,32 @@
                         className: 'kraken-XRP-price'
                     },
                     className: 'XRP-difference'
+                },
+                bch: {
+                    diff: null,
+                    oldDiff: null,
+                    coinone: {
+                        price: null,
+                        className: 'coinone-BCH-price'
+                    },
+                    kraken: {
+                        price: null,
+                        className: 'kraken-BCH-price'
+                    },
+                    className: 'BCH-difference'
+                },
+                ltc: {
+                    diff: null,
+                    oldDiff: null,
+                    coinone: {
+                        price: null,
+                        className: 'coinone-LTC-price'
+                    },
+                    kraken: {
+                        price: null,
+                        className: 'kraken-LTC-price'
+                    },
+                    className: 'LTC-difference'
                 }
             };
         }
